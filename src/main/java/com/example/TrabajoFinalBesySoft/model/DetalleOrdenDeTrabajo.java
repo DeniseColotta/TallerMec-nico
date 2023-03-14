@@ -1,4 +1,4 @@
-package model;
+package com.example.TrabajoFinalBesySoft.model;
 
 import lombok.*;
 
@@ -22,9 +22,9 @@ public class DetalleOrdenDeTrabajo implements Serializable {
     @JoinColumn(name = "orden_trabajo_id")
     private OrdenDeTrabajo ordenTrabajo;
 
-    @OneToMany(mappedBy = "repuesto",cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "repuesto_id")
-    private List<Repuesto> repuestos;
+    private Repuesto repuesto;
 
     private Integer cantidad;
 

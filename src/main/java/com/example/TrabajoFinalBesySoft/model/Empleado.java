@@ -1,10 +1,10 @@
-package model;
+package com.example.TrabajoFinalBesySoft.model;
 
 import lombok.*;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
 import java.io.Serializable;
-import java.util.List;
 
 @Entity
 @Getter
@@ -12,8 +12,8 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 
-@Table(name="mecanicos")
-public class Mecanico implements Serializable {
+@Table(name = "empleados")
+public class Empleado implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -41,11 +41,7 @@ public class Mecanico implements Serializable {
 
     private String piso;
 
-    private Character activo;
-
-    private String especialidad;
-
-    @OneToMany(mappedBy = "mecanico")
-    private List<ManoDeObra> manoDeObra;
+    @Column(name="tipo_empleado")
+    private String tipoDeEmpleado;
 
 }

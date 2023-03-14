@@ -1,4 +1,4 @@
-package model;
+package com.example.TrabajoFinalBesySoft.model;
 
 import lombok.*;
 
@@ -27,6 +27,6 @@ public class Repuesto implements Serializable {
 
     private Double valor;
 
-    @ManyToOne
-    private List<DetalleOrdenDeTrabajo> detalleOrdenTrabajos=new ArrayList<>();
+    @OneToMany(mappedBy = "repuesto")
+    private List<DetalleOrdenDeTrabajo>detalleOrdenTrabajos;
 }

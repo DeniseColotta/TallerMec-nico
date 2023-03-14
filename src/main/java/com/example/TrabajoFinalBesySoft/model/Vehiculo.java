@@ -1,4 +1,4 @@
-package model;
+package com.example.TrabajoFinalBesySoft.model;
 
 import lombok.*;
 
@@ -33,5 +33,5 @@ public class Vehiculo implements Serializable {
             name = "cliente_vehiculo",
             joinColumns = @JoinColumn(name = "cliente_id"),
             inverseJoinColumns = @JoinColumn(name = "vehiculo_id"))
-    private List<Cliente> clientes=new ArrayList<>();;
+    private List<Cliente> clientes;
 }

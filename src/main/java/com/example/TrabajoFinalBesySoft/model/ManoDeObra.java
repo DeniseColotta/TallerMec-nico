@@ -1,4 +1,4 @@
-package model;
+package com.example.TrabajoFinalBesySoft.model;
 
 import lombok.*;
 

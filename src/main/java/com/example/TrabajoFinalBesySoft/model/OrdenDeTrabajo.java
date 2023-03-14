@@ -1,4 +1,4 @@
-package model;
+package com.example.TrabajoFinalBesySoft.model;
 
 import lombok.*;
 
@@ -46,7 +46,7 @@ public class OrdenDeTrabajo implements Serializable {
     @Column(name="importe_total")
     private Double importeTotal;
 
-    private Integer kilometraje;
+    private Long kilometraje;
 
     @Column(name="nivel_combustible")
     private String nivelCombustible;

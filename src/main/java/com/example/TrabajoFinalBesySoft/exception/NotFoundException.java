@@ -1,4 +1,4 @@
-package com.example.TrabajoFinalBesySoft.Exception;
+package com.example.TrabajoFinalBesySoft.exception;
 
 
 public class NotFoundException extends RuntimeException {

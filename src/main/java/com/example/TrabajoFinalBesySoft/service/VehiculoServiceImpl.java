@@ -1,7 +1,7 @@
 package com.example.TrabajoFinalBesySoft.service;
 
-import com.example.TrabajoFinalBesySoft.Exception.NotFoundException;
-import com.example.TrabajoFinalBesySoft.dto.Response.VehiculoOutDto;
+import com.example.TrabajoFinalBesySoft.exception.NotFoundException;
+
 import com.example.TrabajoFinalBesySoft.model.Vehiculo;
 import com.example.TrabajoFinalBesySoft.repositories.IVehiculoRepository;
 import org.springframework.beans.factory.annotation.Autowired;

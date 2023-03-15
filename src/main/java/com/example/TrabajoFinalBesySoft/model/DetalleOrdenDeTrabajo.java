@@ -11,7 +11,6 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-
 @Table(name="detalle_ordenes_trabajo")
 public class DetalleOrdenDeTrabajo implements Serializable {
     @Id
@@ -28,6 +27,7 @@ public class DetalleOrdenDeTrabajo implements Serializable {
 
     private Integer cantidad;
 
-    private Float valorTotal;
+    @Column(name="valor_total")
+    private Double valorTotal;
 }
 

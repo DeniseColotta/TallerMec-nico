@@ -45,7 +45,5 @@ public class Mecanico implements Serializable {
 
     private String especialidad;
 
-    @OneToMany(mappedBy = "mecanico")
-    private List<ManoDeObra> manoDeObra;
 
 }

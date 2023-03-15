@@ -54,11 +54,6 @@ public class OrdenDeTrabajo implements Serializable {
     @Column(name="tipo_tarjeta")
     private  String tipoTarjeta;
 
-    @OneToMany(mappedBy = "ordenTrabajo")
-    private List<ManoDeObra> manoDeObra;
-
-    @OneToMany(mappedBy = "ordenTrabajo")
-    private List<DetalleOrdenDeTrabajo> detalleOrdenesTrabajo;
 
     @ManyToOne
     @JoinColumn(name="recepcionista_id")

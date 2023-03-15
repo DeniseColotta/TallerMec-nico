@@ -1,8 +1,6 @@
 package com.example.TrabajoFinalBesySoft.model;
 
 import lombok.*;
-
-
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import java.io.Serializable;
@@ -15,7 +13,6 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-
 @Table(name="clientes")
 public class Cliente implements Serializable {
     @Id
@@ -35,10 +32,12 @@ public class Cliente implements Serializable {
     private String telefonoDeLinea;
 
     @Email
-    private String correElectronico;
+    @Column(name="correo_electronico")
+    private String correoElectronico;
 
     private String calle;
 
+    @Column(name="codigo_postal")
     private String codigoPostal;
 
     private String departamento;
@@ -50,5 +49,5 @@ public class Cliente implements Serializable {
     private String piso;
 
     @ManyToMany(fetch = FetchType.LAZY,mappedBy = "clientes")
-    private List<Vehiculo> vehiculos=new ArrayList<>();;
+    private List<Vehiculo> vehiculos;
 }

@@ -27,6 +27,4 @@ public class Repuesto implements Serializable {
 
     private Double valor;
 
-    @OneToMany(mappedBy = "repuesto")
-    private List<DetalleOrdenDeTrabajo>detalleOrdenTrabajos;
 }

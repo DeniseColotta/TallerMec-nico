@@ -1,9 +1,10 @@
 package com.example.TrabajoFinalBesySoft.service;
 
+import com.example.TrabajoFinalBesySoft.dto.Response.VehiculoOutDto;
 import com.example.TrabajoFinalBesySoft.model.Vehiculo;
 
 import java.util.Optional;
 
 public interface IVehiculoService {
-    Optional<Vehiculo> buscarPorPatente(String patente);
+    VehiculoOutDto buscarPorPatente(String patente);
 }

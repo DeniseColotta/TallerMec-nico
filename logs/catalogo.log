@@ -20,3 +20,4 @@
 2023-03-24 19:28:31,947 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2023-03-24 19:28:32,602 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
 2023-03-24 19:28:32,662 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-24 19:28:33,252 INFO org.springframework.boot.StartupInfoLogger [main] Started TrabajoFinalBesySoftApplication in 9.572 seconds (JVM running for 10.943)

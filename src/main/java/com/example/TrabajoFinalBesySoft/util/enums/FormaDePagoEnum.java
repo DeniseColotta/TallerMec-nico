@@ -1,4 +1,4 @@
-package com.example.TrabajoFinalBesySoft.Enum;
+package com.example.TrabajoFinalBesySoft.util.enums;
 
 import lombok.AllArgsConstructor;
 

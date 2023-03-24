@@ -1,6 +1,6 @@
 package com.example.TrabajoFinalBesySoft.service.implementation;
 
-import com.example.TrabajoFinalBesySoft.Enum.EstadoEnum;
+import com.example.TrabajoFinalBesySoft.util.enums.EstadoEnum;
 import com.example.TrabajoFinalBesySoft.dto.Request.FacturaDto;
 import com.example.TrabajoFinalBesySoft.dto.Request.OrdenTrabajoCreadaDto;
 import com.example.TrabajoFinalBesySoft.dto.Request.PagoDto;

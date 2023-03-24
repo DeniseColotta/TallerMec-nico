@@ -19,7 +19,7 @@ public class DetalleOrdenDeTrabajo implements Serializable {
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "orden_trabajo_id")
-    private OrdenDeTrabajo ordenTrabajo;
+    private OrdenDeTrabajo ordenDeTrabajo;
 
     @ManyToOne
     @JoinColumn(name = "repuesto_id")

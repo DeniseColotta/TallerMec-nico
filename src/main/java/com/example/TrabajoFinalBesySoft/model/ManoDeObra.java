@@ -30,5 +30,5 @@ public class ManoDeObra implements Serializable {
 
     @ManyToOne
     @JoinColumn(name = "orden_trabajo_id")
-    private OrdenDeTrabajo ordenTrabajo;
+    private OrdenDeTrabajo ordenDeTrabajo;
 }

@@ -66,4 +66,10 @@ public class OrdenDeTrabajo implements Serializable {
     @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "vehiculo_id")
     private Vehiculo vehiculo;
+
+    @OneToMany(mappedBy = "ordenDeTrabajo")
+    private List<ManoDeObra> manoDeObra;
+
+    @OneToMany(mappedBy = "ordenDeTrabajo")
+    private List<DetalleOrdenDeTrabajo> detalleOrdenDeTrabajo;
 }
